@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/I-M-G/BlackOps4Stats/issues"
   },
-  "homepage": "https://github.com/I-M-G/BlackOps4Stats#readme"
+  "homepage": "https://github.com/I-M-G/BlackOps4Stats#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }
