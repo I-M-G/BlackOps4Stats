@@ -1,0 +1,19 @@
+{
+  "name": "blackopsstats",
+  "version": "0.0.1",
+  "description": "Using CODTracker API to get player stats.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-M-G/BlackOps4Stats.git"
+  },
+  "author": "Ian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/I-M-G/BlackOps4Stats/issues"
+  },
+  "homepage": "https://github.com/I-M-G/BlackOps4Stats#readme"
+}
