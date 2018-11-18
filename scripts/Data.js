@@ -51,9 +51,9 @@ let handleData = apiData => {
   stats[5].value = parsed.data.stats[2].displayValue;
   stats[6].value = winLose; // Converted (ex. 3.41 wins for ever lose)
   
-  for(let i = 0; i < stats.length; i++) {
-    writeFiles(stats[i].title, 'txt', stats[i].value);
-  }
+  // for(let i = 0; i < stats.length; i++) {
+  //   writeFiles(stats[i].title, 'txt', stats[i].value);
+  // }
 
 }
 
