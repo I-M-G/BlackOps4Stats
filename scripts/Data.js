@@ -17,12 +17,12 @@ let handleData = apiData => {
   // console.log(parsed.data.stats); // Data less metadat. ie platform, user etc
 
   // Used to get data keys and indexes
-  for(let i = 0; i < parsed.data.stats.length; i++) {
-    let reference = [];
-    reference[i] = {key: parsed.data.stats[i].metadata.key, index: i};
-    console.log(`Array Key: ${parsed.data.stats[i].metadata.key}, Position: ${i}`);
-    // writeFiles('ReferenceFile', 'JSON', JSON.stringify(reference));
-  }
+  // for(let i = 0; i < parsed.data.stats.length; i++) {
+  //   let reference = [];
+  //   reference[i] = {key: parsed.data.stats[i].metadata.key, index: i};
+  //   console.log(`Array Key: ${parsed.data.stats[i].metadata.key}, Position: ${i}`);
+  //   // writeFiles('ReferenceFile', 'JSON', JSON.stringify(reference));
+  // }
 
   let winLose = parsed.data.stats[16].value / parsed.data.stats[17].value;
   stats[0].value = parsed.data.stats[0].displayValue;
@@ -38,6 +38,8 @@ let handleData = apiData => {
   // }
 
 }
+
+console.log(`Prestige: ${stats[0].value}, Level: ${stats[1].value}`);
 
 let writeFiles = (fileName, fileType, data) => {
   fs.writeFile(`./Data/${fileName}.${fileType}`, data, error => {

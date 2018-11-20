@@ -10,6 +10,8 @@ const options = {
   }
 }
 
+request(options, getData); // Make initial request
+
 function getData(error, response, body) {
   if(error) console.log(`Err: ${error}`);
 
@@ -20,4 +22,4 @@ function getData(error, response, body) {
 
 }
 
-request(options, getData);
+setInterval(request(options, getData), 1000 * 10);
