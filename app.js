@@ -1,18 +1,18 @@
 const request = require('request');
-const credentials = require('./credentials');
+const auth = require('./auth');
 const Data = require('./scripts/Data');
 
 
 const options = {
-  url: `https://cod-api.tracker.gg/v1/standard/bo4/profile/2/${credentials.gamertag}`,
+  url: `https://cod-api.tracker.gg/v1/standard/bo4/profile/${auth.platform}/${auth.gamertag}`,
   headers: {
-    'TRN-Api-Key': credentials.apiKey
+    'TRN-Api-Key': auth.apiKey
   }
 }
 
 request(options, getData); // Make initial request
 
-function getData(error, response, body) {
+const getData = (error, response, body) => {
   if(error) console.log(`Err: ${error}`);
 
   // let stats = JSON.parse(body);
@@ -22,4 +22,8 @@ function getData(error, response, body) {
 
 }
 
-setInterval(request(options, getData), 1000 * 10);
+const getNewData = () => {
+  request(options, getData);
+  console.log(`New Data: ${new Date().toLocaleTimeString()}`);
+}
+setInterval(getNewData, 1000 * 10);

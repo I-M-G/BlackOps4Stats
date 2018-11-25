@@ -37,9 +37,10 @@ let handleData = apiData => {
   //   writeFiles(stats[i].title, 'txt', stats[i].value);
   // }
 
+  console.log(`Prestige: ${stats[0].value}, Level: ${stats[1].value}`);
 }
 
-console.log(`Prestige: ${stats[0].value}, Level: ${stats[1].value}`);
+
 
 let writeFiles = (fileName, fileType, data) => {
   fs.writeFile(`./Data/${fileName}.${fileType}`, data, error => {
