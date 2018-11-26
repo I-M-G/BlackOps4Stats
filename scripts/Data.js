@@ -33,11 +33,11 @@ let handleData = apiData => {
   stats[5].value = parsed.data.stats[2].displayValue;
   stats[6].value = winLose; // Converted (ex. 3.41 wins for ever lose)
   
-  // for(let i = 0; i < stats.length; i++) {
-  //   writeFiles(stats[i].title, 'txt', stats[i].value);
-  // }
+  for(let i = 0; i < stats.length; i++) {
+    writeFiles(stats[i].title, 'txt', stats[i].value);
+  }
 
-  console.log(`Prestige: ${stats[0].value}, Level: ${stats[1].value}`);
+  // console.log(`Prestige: ${stats[0].value}, Level: ${stats[1].value}`);
 }
 
 
@@ -46,7 +46,7 @@ let writeFiles = (fileName, fileType, data) => {
   fs.writeFile(`./Data/${fileName}.${fileType}`, data, error => {
     if(error) console.log(error);
 
-    console.log('FILE SAVED');
+    // console.log('FILE SAVED');
   });
 }
 

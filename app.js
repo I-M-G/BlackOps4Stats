@@ -10,20 +10,19 @@ const options = {
   }
 }
 
-request(options, getData); // Make initial request
-
-const getData = (error, response, body) => {
+let getData = (error, response, body) => {
   if(error) console.log(`Err: ${error}`);
-
+  
   // let stats = JSON.parse(body);
   // console.log(stats.data.stats); // Full API stat data
-
+  
   Data.handleData(body);
-
+  
 }
+request(options, getData); // Make initial request
 
 const getNewData = () => {
   request(options, getData);
   console.log(`New Data: ${new Date().toLocaleTimeString()}`);
 }
-setInterval(getNewData, 1000 * 10);
+setInterval(getNewData, 1000 * 30);
