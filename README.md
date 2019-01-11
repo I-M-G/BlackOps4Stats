@@ -39,20 +39,33 @@ Just going to show how to bring in text files to the most common streaming softw
 ### [OBS](https://obsproject.com/)
 These steps were last tested with OBS version 22.0.2
 
-1. Open OBS and go to the scene that will use the data.
-2. Click the plus sign to add a new source. Then select the "Text (GDI+)" option.
-[Add text file source](https://photos.app.goo.gl/ADMuCDesUowDC7ie6 "Add text file source")
-3. A sub menu will open. You can name your new source here if you wish. Click "OK" when you are finished.
-4. The next menu will let you configure the text's display on the stream. Here we will add the file we wish to display. Select the check box "Read from file" and then select "Browse". Navigate to the location of the saved files. You'll need to run the app once or you will not have your files yet.
-5. You can customize the font, color, background and a few other options, but at this point you are done with adding the files. Click "OK" and then position and resize as you need within your scene.
+- Open OBS and go to the scene that will use the data.
+- Click the plus sign to add a new source. Then select the "Text (GDI+)" option.
+
+![Add text file source](https://github.com/I-M-G/BlackOps4Stats/blob/master/images/OBS%20add%20source.png "Add text file source")
+- A sub menu will open. You can name your new source here if you wish. Click "OK" when you are finished.
+
+![Name your scene](https://github.com/I-M-G/BlackOps4Stats/blob/master/images/OBS%20name%20source.png "Name your scene")
+- The next menu will let you configure the text's display on the stream. Here we will add the file we wish to display. Select the check box "Read from file" and then select "Browse". Navigate to the location of the saved files. You'll need to run the app once or you will not have your files yet.
+
+![Add your text file](https://github.com/I-M-G/BlackOps4Stats/blob/master/images/OBS%20read%20from%20file.png "Add you text file")
+- You can customize the font, color, background and a few other options, but at this point you are done with adding the files. Click "OK" and then position and resize as you need within your scene.
 
 ### [Xsplit](https://www.xsplit.com/)
 These steps were last tested with Xsplit version 3.6 and a premium license.
 
-1. Open Xsplit and go to the scene that will use the data.
-2. Select "Add source" and then click "Text...".
-3. A sub menu will open, click the check box "Use custom script" and then select "Edit Script".
-4. From the "Template" drop down select "Load Text from Local File".
-5. In the settings tab go to the "File Path" option and navigate to the location of the saved files. You'll need to run the app once or you will not have your files yet.
-6. In this menu you can also add an update interval. This will check the file for changes every X amount of seconds. Probably best to keep this low, so your stream is getting the new data when it's pushed to the file. Not sure about any performance issues a smaller number could have.
-7. Finally, click "Update Text" and you are essentially done. You can customize the font, color, background and a few other options at this point. Click "OK" and then position and resize as you need within your scene.
+- Open Xsplit and go to the scene that will use the data.
+- Select "Add source" and then click "Text...".
+
+![Add text file source](https://github.com/I-M-G/BlackOps4Stats/blob/master/images/Xsplit%20add%20source.png "Add text file source")
+- A sub menu will open, click the check box "Use custom script" and then select "Edit Script".
+
+![Edit script](https://github.com/I-M-G/BlackOps4Stats/blob/master/images/Xsplit%20add%20script.png "Edit Script")
+- From the "Template" drop down select "Load Text from Local File".
+
+![Load text from local file](https://github.com/I-M-G/BlackOps4Stats/blob/master/images/Xsplit%20edit%20script.png "Load text from local file")
+- In the settings tab go to the "File Path" option and navigate to the location of the saved files. You'll need to run the app once or you will not have your files yet.
+
+![Add file path](https://github.com/I-M-G/BlackOps4Stats/blob/master/images/Xsplit%20add%20text%20file.png "Add file path")
+- In this menu you can also add an update interval. This will check the file for changes every X amount of seconds. Probably best to keep this low, so your stream is getting the new data when it's pushed to the file. Not sure about any performance issues a smaller number could have.
+- Finally, click "Update Text" and you are essentially done. You can customize the font, color, background and a few other options at this point. Click "OK" and then position and resize as you need within your scene.
