@@ -41,6 +41,7 @@ These steps were last tested with OBS version 22.0.2
 
 1. Open OBS and go to the scene that will use the data.
 2. Click the plus sign to add a new source. Then select the "Text (GDI+)" option.
+[Add text file source](https://photos.app.goo.gl/ADMuCDesUowDC7ie6 "Add text file source")
 3. A sub menu will open. You can name your new source here if you wish. Click "OK" when you are finished.
 4. The next menu will let you configure the text's display on the stream. Here we will add the file we wish to display. Select the check box "Read from file" and then select "Browse". Navigate to the location of the saved files. You'll need to run the app once or you will not have your files yet.
 5. You can customize the font, color, background and a few other options, but at this point you are done with adding the files. Click "OK" and then position and resize as you need within your scene.
