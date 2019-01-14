@@ -31,7 +31,7 @@ let handleData = apiData => {
   stats[3].value = parsed.data.stats[16].displayValue;
   stats[4].value = parsed.data.stats[41].displayValue;
   stats[5].value = parsed.data.stats[2].displayValue;
-  stats[6].value = winLose; // Converted (ex. 3.41 wins for ever lose)
+  stats[6].value = winLose.toFixed(2); // Converted (ex. 3.41 wins for ever lose)
   
   for(let i = 0; i < stats.length; i++) {
     writeFiles(stats[i].title, 'txt', stats[i].value);

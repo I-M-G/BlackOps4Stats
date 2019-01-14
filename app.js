@@ -25,4 +25,4 @@ const getNewData = () => {
   request(options, getData);
   console.log(`New Data: ${new Date().toLocaleTimeString()}`);
 }
-setInterval(getNewData, 1000 * 30);
+setInterval(getNewData, 1000 * 20);
